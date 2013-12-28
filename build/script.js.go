@@ -12,7 +12,7 @@ win.on('loaded', function() {
         win.resizeTo(parseInt(localStorage.width), parseInt(localStorage.height));
         win.moveTo(parseInt(localStorage.x), parseInt(localStorage.y));
     }
-	
+
     // Ensure we are visible
     win.show();
 
@@ -32,7 +32,7 @@ win.on('loaded', function() {
     on('redirect', function(url) {
         window.location.href = url;
     });
-    
+
     // And kill client when we close the window
     win.on('close', function() {
         clientProcess.kill();
